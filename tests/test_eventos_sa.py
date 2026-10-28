@@ -23,6 +23,11 @@ class EventosSATests(unittest.TestCase):
         self.assertEqual(collector.parse_days("Evento termina em 9 dias restantes"), 9)
         self.assertIsNone(collector.parse_days("Permanente"))
 
+    def test_card_permanent_badges(self):
+        self.assertTrue(collector.card_marks_permanent("POPULAR Evento de benefícios"))
+        self.assertTrue(collector.card_marks_permanent("Evento Permanente"))
+        self.assertFalse(collector.card_marks_permanent("Evento termina em 9 dias restantes"))
+
     def test_date_parser_iso_and_brazilian(self):
         iso = collector.parse_date_tokens("Período: 2026-10-22 03:00 ~ 2026-11-05 02:59")
         self.assertGreaterEqual(len(iso), 2)
