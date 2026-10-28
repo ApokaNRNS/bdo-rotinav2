@@ -69,6 +69,11 @@ def parse_days(text: str):
     return int(match.group(1)) if match else None
 
 
+def card_marks_permanent(text: str) -> bool:
+    """Reconhece os rótulos do cartão; 'POPULAR' é o selo visual de permanente."""
+    return bool(re.search(r"\b(?:permanente|popular)\b", text or "", re.I))
+
+
 def parse_date_tokens(text: str):
     """Extrai datas dos formatos mais comuns exibidos nas páginas oficiais."""
     patterns = [
@@ -245,10 +250,11 @@ def main():
         old = old_by_url.get(event["url"], {})
         permanent, days, status = False, None, "andamento"
 
-        # Duração do cartão é uma fonte mais direta para "dias restantes".
+        # Duração e selo permanente são lidos apenas do cartão deste aviso.
+        # O rótulo "POPULAR" do site equivale ao selo de evento permanente.
         card_text = event.pop("_card_text", "")
         card_days = parse_days(card_text)
-        card_permanent = bool(re.search(r"\bpermanente\b", card_text, re.I))
+        card_permanent = card_marks_permanent(card_text)
         if card_permanent or re.search(r"\bpermanente\b", event["title"], re.I):
             permanent, status = True, "andamento"
         detail = get_detail(session, event) if (card_days is None and not card_permanent) else None
