@@ -1,292 +1,0 @@
-Ë
-    ÕYájÄ6  ã                  ó  — d Z ddlmZ ddlZddlZddlZddlZddl m Z mZm	Z	 ddl
-m
-Z
- ddlm
-Z
- dd lmZ ddlmZmZmZmZmZ ddlZdd	lmZ  ee«      j5                  «       j6                  d
-   Zed
-z
-  Zedz
-  d
-z
-  ZdZdZ dddœZ!dZ"dZ#dZ$d%d&d„Z%d'd„Z&d'd„Z'd(d„Z(d(d„Z)d(d„Z*d)d„Z+d„ Z,d„ Z-d*d„Z.d+d „Z/d!„ Z0e1d"k(  r		  e0«        yy# e2$ r3Z3 e4d#e3› ejj                  ¬$«        ejl                  d
-«       Y dZ3[3ydZ3[3ww xY w),uÛ   Atualiza data/eventos-sa.json a partir dos avisos oficiais do Black Desert SA.
-
-A coleta falha de forma fechada: se o site mudar e nÃ£o for possÃ­vel reconhecer
-os avisos, o arquivo JSON existente nÃ£o Ã© substituÃ­do.
-é    )Ú
-annotationsN)ÚdatetimeÚdateÚtimezone)ÚZoneInfo)Úparsedate_to_datetime)ÚPath)Ú urljoinÚurlparseÚparse_qsÚ	urlencodeÚ
-urlunparse)Ú
-BeautifulSoupé   z
-index.htmlÚdatazeventos-sa.jsonz@https://www.sa.playblackdesert.com/pt-BR/News/Notice?boardType=3)zsa.playblackdesert.comz\Mozilla/5.0 (compatible; BDO-Rotina-EventosSA/1.0; +https://github.com/ApokaNRNS/bdo-rotina)zpt-BR,pt;q=0.9,en;q=0.7)z
-User-AgentzAccept-Languageé   é   éx   c                ó  ‡— 	 t        | «      }|j                  dk7  s|j                  sy|j                  j
-                  «       Š|r‰j
-                  d«      nt        ˆfd„t        D «       «      }|r| S dS # t        t        f$ r Y yw xY w)NÚ Úhttpsz
-.pearlcdn.comc              3  óT   •K  — | ]  }‰|k(  xs ‰j                  d |z   «      –— Œ! y­w)Ú.N)Úendswith)Ú.0ÚitemÚhosts     €ú]D:\Downloads\bdo-rotina-eventos-sa-automatico\bdo-rotina-main\scripts\atualizar_eventos_sa.pyÚ	<genexpr>z%valid_official_url.<locals>.<genexpr>,   s.   øè ø€ ð ?Ù>K°dˆ‰Ò1˜Ÿ
-™
- c¨D¡jÓ1Ó1¹mùs   ƒ%()	r
-   Ú	TypeErrorÚ
-ValueErrorÚschemeÚhostnameÚlowerr   ÚanyÚ
-ALLOWED_HOSTS)ÚvalueÚimageÚparsedÚ allowedr   s       @r   Úvalid_official_urlr+   $   s†   ø€ ðÜ˜%“ˆð ‡}}˜ Ò  v§¢ØØ
-?‰?×
- Ñ
- Ó
-"€DÙ05ˆdm‰m˜OÔ,¼3ó ?Ý>Kó?ó <€Gñ ˆ5Ð# Ð#øô 
-”zÐ
-"ò Ùðús   ƒ
-A5 Á5B ÂB c           
-     ó2  — t        d| j                  «       «      }t        |«      syt         |«      }t	        |j
-                  «      }d|vry|j
-                  ddg«       t        |j                  |j                  |j                  dt        |d¬ «      df«      S )uK   Converte links relativos/legados para uma URL oficial com paÃ­s explÃ­cito.ú"https://www.sa.playblackdesert.comr   ÚgroupContentNoÚ
-countryTypezpt-BRT)Údoseq)r
-   Ústripr+   r
-   r   ÚqueryÚ
-setdefaultr   r"   ÚnetlocÚpathr
-   )r'   Úurlr)   r2   s       r   Ú
-normalize_urlr7   2   s‚   € ä
-Ð6¸¿
-¹
-»
-Ó
-F€CÜ
-˜cÔ
-"ØÜ
-c‹]€FÜV—\‘\Ó"€EØ ˜uÑ $ØØ	×Ñ] W IÔ.Ü
-v—}‘} f§m¡m°V·[±[À"ÄiÐPUÐ]aÔFbÐdfÐgÓ
-hÐhó    c                óT   — t        j                  dd| xs d«      j                  «       S )Nz\s+Ú r   )ÚreÚsubr1   )r'   s    r   Ú
-clean_textr=   ?   s"   € Ü
-
-6‰6&˜#˜uš{¨Ó
-+×
-1Ñ
-1Ó
-3Ð3r8   c                óˆ   — t        j                  d| t         j                  «      }|rt         |j	                  d«      «      S d S )Nz(\d+)\s*dias?\s+restantes?r   )r;   ÚsearchÚIÚintÚgroup)ÚtextÚmatchs     r   Ú
-parse_daysrE   C   s3   € ÜI‰IÐ3°T¼2¿4¹4Ó@€EÙ"'Œ3ˆu{‰{˜1‹~Ó
-Ð1¨TÐ1r8   c                óH  — ddg}g }|D ]Û  \  }}t        j                  || «      D ]½  }	 |dk(  r&t        t        |j	                  ddd«      «      \  }} }n%t        t        |j	                  ddd«      «      \  }} }t         |j	                  d «      xs d«      }	t         |j	                  d	«      xs d«      }
-|j
-                  |j
-                  «       t        || ||	|
-«      f«       Œ¿ ŒÝ |j                  d
-„ ¬
-«       |D 
-cg c]   \  }
-}|‘Œ	 c}}
-S # t        $ r Y Œõw xY wc c}}
-w )uE   Extrai datas dos formatos mais comuns exibidos nas pÃ¡ginas oficiais.)zF(?<!\d)(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T](\d{1,2}):(\d{2}))?Úymd)zF(?<!\d)(\d{1,2})[-/.](\d{1,2})[-/.](20\d{2})(?:[ T](\d{1,2}):(\d{2}))?ÚdmyrG   r   é   é   é   r   é   c                ó   — | d   S )Nr   © )Úpairs    r   Ú<lambda>z#parse_date_tokens.<locals>.<lambda>[   s   €   Q¢ r8   )Úkey)
-r;   ÚfinditerÚmaprA   rB   ÚappendÚstartr   r!   Úsort)
-rC   ÚpatternsÚfoundÚ patternÚorderÚmÚyearÚmonthÚdayÚhourÚminuteÚ_r   s
-                r   Úparse_date_tokensrb   H   s  € ð 	[ØZð€Hð 
-€EÛ"‰ˆ Ü—‘˜W dÖ+ˆAð	
-Ø˜E’>Ü'*¬3°· ± ¸¸1¸aÓ0@Ó'AÑ$D˜%¡ä'*¬3°· ± ¸¸1¸aÓ0@Ó'AÑ$C˜ Ü˜1Ÿ7™7 1›:š?¨Ó+Ü˜QŸW™W Q›Zš_¨1Ó-Ø—‘˜aŸg™g›i¬°$¸¸sÀDÈ&Ó)QÐRÕSñ ,ð #ð 
-‡JJÑ'€JÔ(Ù %Ô
-&¡‘WQ˜ŠD Ò
-&Ð&øô  ò 
-Ùð
-üó 's   ©B:DÃ?DÄ	D ÄD c           	     óö   — d}t        t        j                  d|› d|› d| «      «      }|r0t         |d   j	                  d«      «      }t
-        |«      d k\  r|d   S t         | «      }t
-        |«      d k\  r|d   S d S )NzY(?:20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}|\d{1,2}[-/.]\d{1,2}[-/.]20\d{2})(?:[ T]\d{1,2}:\d{2})?Ú(u   )\s*[~ï½žâ€“â€”]\s*(Ú)éÿÿÿÿr   rI   )Úlistr;   rR   rb   rB   Úlen)rC   ÚtokenÚrangesÚdatess       r   Úparse_event_end_daterl   _   s€   € àh€EÜ
-”"—+‘+  5 'Ð)=¸e¸WÀAÐFÈÓMÓ
-N€FÙ 
-Ü! &¨¡*×"2Ñ"2°1Ó"5Ó6ˆÜ
-ˆu‹:˜Š?Ø˜‘9ÐÜ˜dÓ#€EÜ˜E›
- ašˆ5‰9Ð1¨TÐ1r8   c                 ó˜  — t        | j                  dd¬«      «      }t        j                  d|dz   |z   t        j                  «      ryt
-        |«      }|r6|j
-                  «       }t        d||z
-  j                  «      }d |||k  rdfS d	fS t        |«      }|2d ||dk  r(t        j                  d
-|t        j                  «      rdfS d	fS y
-)Nr:   T©r1   ú\bpermanente\b©TNÚ	andamentor   FÚ	encerradorq   zencerrad[oa]©FNrq   )
-r=   Úget_textr;   r?   r@   rl   r   ÚmaxÚdaysrE   ) ÚsoupÚ	card_textÚtodayrC   Úend_dateÚendrv   s           r   Úextract_expiryr|   k   sÉ   € Ü
-d—m‘m C¨tmÓ4Ó
-5€DÜ 	‡yyÐ" I°¡O°dÑ$:¼B¿D¹DÔ AØ&ä# DÓ)€HÙ Øm‰m‹oˆÜ1s˜U‘{×(Ñ(Ó)ˆØd¨3°ª;˜KÐGÐG¸KÐGÐGä
-iÓ
- €DØ 
-Ð Ød¨4°1ª9¼¿¹À?ÐT]Ô_a×_cÑ_cÔ9d˜KÐuÐuÐjuÐuÐuà
-#r8   c                  ó\  — t         j                  «       sg S t         j                  d¬«      } t         j                  d| t        j
-                  t        j                  z   ¬«      }|st        dt        j                  ¬«       g S 	 t        j                  |j                  d «      «      }|j                  d	g «      }|D cg c]9  }t!        |t"        «      sŒ|j                  d
-«      sŒ&|j                  d
-«      sŒ8|‘Œ; c}S # t        j                  $ r}t        d|› «      |‚d }~ww xY wc c}w )Núutf-8©Úencodingz@<script[^>]*id=['\"]eventos-sa-fallback['\"][^>]*>(.*?)</script>)Úflagsu.   Aviso: snapshot nÃ£o encontrado no index.html.©Úfiler   u(   Snapshot incorporado no HTML invÃ¡lido: ÚeventsÚtitler6   )Ú	HTML_PATHÚexistsÚ	read_textr;   r?   r@   ÚSÚprintÚsysÚstderrÚjsonÚloadsrB   ÚJSONDecodeErrorÚRuntimeErrorÚgetÚ
-isinstanceÚdict)ÚhtmlrD   r   Úexcr„   Úes         r   Ú
-load_snapshotr—   }   sø   € Ü
-×
-Ñ
-Ô
-Øˆ	Ü
-×
-Ñ
-¨ Ð
-Ó
-0€DÜI‰IØKØÜd‰d”R—T‘T‰kô 
-€Eñ
- Ü
-Ð>ÄSÇZÁZÕPØˆ	ðVÜz‰z˜%Ÿ+™+ a›.Ó)ˆð X‰Xh Ó
-#€FÙÓ
-Y‘v!¤¨A¬tÕ!4¸¿¹¸w½ÈAÏEÉEÐRWÍLŠAvÑ
-YÐYøô  ×
-Ñ
-ò VÜÐEÀcÀUÐKÓLÐRUÐUûðVüò Zs0   Â$C? Â>D)ÃD)Ã&D)Ã8D)Ã?D&ÄD!Ä!D&c                 ó€  — t         j                  «       sg S 	 t        j                  t         j	                  d¬«      «      } t        | t        «      r1t        | j                  d«      t        «      r| j                  dg «      S g S # t        j
-                  t        f$ r  t        dt        j                  ¬«       g cY S w xY w)Nr~   r   uB   Aviso: JSON existente invÃ¡lido; o snapshot serÃ¡ usado como base.r‚   r„   )Ú	JSON_PATHr‡   r   rŽ   rˆ   r   Ú OSErrorrŠ   r‹   rŒ   r’   r“   r‘   rg   )r   s    r   Ú
-load_existingr›   ‘   s   € Ü
-×
-Ñ
-Ô
-Øˆ	ðÜz‰zœ)×-Ñ-°wÐ-Ó?Ó@ˆô &0°´dÔ%;Ä
-È4Ï8É8ÐT\ÓK]Ô_cÔ@dˆ48‰8H˜bÓ
-!ÐlÐjlÐløô  
-× Ñ ¤'Ð
-*ò Ü
-ÐRÔY\×YcÑYcÕdØŠ	ðús   ˜)B Â6B=Â<B=c                ó0  — g }t        «       }| j                  dd¬«      D ]ò  }|j                  dd«      }d|vsd |vrŒt         |«      }t	        |j                  d«      xs |j
-                  d	d¬
-«      «      }|r|rt
-        |«      d
-k  rŒl|j                  «       dv rd}|} |}t        d
-«      D ]h  }	| j                  € nZ| j                  } | }t	        | j
-                  d	d¬
-«      «      }
-| j                  d«      sŒMt
-        |
-«      t
-        |«      dz   kD  sŒh n |s1|j                  g d¢«      }
-|
-rt	        |
-j
-                  d	d¬
-«      «      }|r|j                  «       dv rŒC||v rŒI|j                  |«       |j                  d«      }d}
-|rT|j                  d«      xs( |j                  d«      xs |j                  d«      xs d}
-t        d|
-«      }
-t        |
-d¬«      }
-|j                  |||
-t	        |j
-                  d	d¬
-«      «      dœ«       Œõ |S )uP   Localiza links de anÃºncios e sobe a Ã¡rvore para recuperar tÃ­tulo e miniatura.ÚaT)Úhrefrž   r   zgroupContentNo=ÚDetailr…   r:   rn   rJ   >   úver maisú
-saiba maisÚmaisé   ÚimgrL   )Úh2Úh3Úh4ÚstrongÚsrczdata-srcz
-data-originalr-   ©r(   )r…   r6   r(   Ú
-_card_text)ÚsetÚfind_allr‘   r7   r=   rt   rh   r$   ÚrangeÚparentÚfindÚaddr
-   r+   rT   )rw   Ú resultsÚseenÚanchorÚraw_hrefr6   r…   ÚnodeÚbestra   rC   Ú headingr¤   r(   s                 r   Úfind_event_cardsr¹   œ   sú  € à€GÜ
-‹5€DØ—-‘- ¨$-×/ˆØ—:‘:˜f bÓ)ˆØ
- HÑ
-,°ÀÑ0HØÜ˜HÓ%ˆÜ˜6Ÿ:™: gÓ.ÒR°&·/±/À#ÈT°/Ó2RÓSˆÙ™%¤3 u£:°¢>ØØ
-;‰;‹=Ð>Ñ
->ØˆEØˆØˆô q–ˆAØ{‰{Ð"ÙØ—;‘;ˆDØˆDÜ˜dŸm™m¨C°t˜mÓ<Ó=ˆDØy‰y˜Õ¤C¨£I´°E³
-¸Q±Ó$>Ùð ñ Ø—i‘iÒ <Ó=ˆGÙÜ" 7×#3Ñ#3°C¸tÐ#3Ó#DÓEÙ˜Ÿ
-™
-›
-Ð)KÑKÙØ
-$‰;ÙØ‰Œ
-Øi‰i˜ÓˆØˆÙ
-Ø—G‘G˜E“NÒ[ c§g¡g¨jÓ&9Ò[¸S¿W¹WÀ_Ó=UÒ[ÐY[ˆEÜÐ@À%ÓHˆEÜ& u°DÔ9ˆEØ‰ØØØÜ$ T§]¡]°3¸d ]Ó%CÓDñ	
-ö 	
-ðK 0ðV €Nr8   c                 óJ  — 	 | j                  |d   t        ¬«      }|j                  «        |j                  xs |j                  |_        t
-        |j                  d«      S # t        j                  $ r.}t        d|d   › d|› t        j                  ¬ «       Y d }~y d }~ww xY w)Nr6   ©Ú timeoutú
-html.parseru*   Aviso: nÃ£o foi possÃ­vel ler detalhes de r…   z: r‚   )r‘   Ú TIMEOUTÚraise_for_statusÚapparent_encodingr€   r   rC   ÚrequestsÚRequestExceptionrŠ   r‹   rŒ   )Ú sessionÚeventÚresponser•   s       r   Ú
-get_detailrÆ   Î   s   € ð Ø—;‘;˜u U™|´W;Ó=ˆØ×!Ñ!Ô#Ø$×6Ñ6ÒK¸(×:KÑ:KˆÔÜ˜XŸ]™]¨MÓ:Ð:øÜ
-×
-$Ñ
-$ò Ü
-Ð:¸5À¹>Ð:JÈ"ÈSÈEÐRÔY\×YcÑYcÕdÜûðús   ‚AA! Á!B"Á4$BÂB"c            	     óL
-  — t        j                  «       } | j                  j                   t        «       t
-        j                  t        d«      «      j                  «       }| j                  t        t        ¬«      }|j                  «        |j                  xs |j                  |_        t        |j                   d«      }t#        |«      }t%        |«      dk  rt'        dt%        |«      › d«      ‚t)        «       }t+        «       }i } ||z   D ].  }t-        t/        |j                  d d«      «      «      }	|	sŒ*|| |	<   Œ0 i }
-t1        |d t2         «      D ]w  \  }
-}| j                  |d    i «      }d	\  }
-}}|j5                  d
-d«      }t7        |«      }t9        t;        j<                  d
-|t:        j>                  «      «      }|s(t;        j<                  d
-|d   t:        j>                  «      rd
-\  }
-}|€|stA        | |«      nd }|rÙtC        |jE                  dd¬«      «      }t;        j<                  d
-|t:        j>                  «      r d\  }
-}}nDtG        |«      }|r3|j                  «       }tI        d||z
-  jJ                  «      }||k  rdnd}n||}|d   sH|jM                  dd¬«      }|r3|j                  d«      r"tO        |d    |d   «      }tQ        |d¬«      |d<   |r d\  }
-}}n|€||d}}|
-rd\  }}nN|€L|j                  d«      }|j                  d|«      }|j                  d«      du r|j                  d«      dk(  rd}|d   |d    |d   xs |j                  dd«      |||
-xs |j                  d«      du d œ}|d   r
-d|d<   d |d<   ||
-|d    <   |
-tS        t%        |«      t2        «      d!z
-  k  sŒctU        jV                  d"«       Œz ||z   D ]š  }t-        t/        |j                  d d«      «      «      }	|	r|	|
-v s|j                  d«      sŒ?tY        |«      }|	|d <   tQ        t/        |j                  dd«      «      d¬«      |d<   |j                  d«      du r
-d#\  |d<   |d<   ||
-|	<   Œœ t[        |
-j]                  «       «      d t^         }t%        |«      dk  r
-t'        d$«      ‚t`        jc                  «       ro	 te        jf                  t`        ji                  d%¬&«      «      }|j                  d'«      t        k(  r-|j                  d(«      |k(  rtk        d)t%        |«      › d*«       y t        t
-        j                  tr        jt                  «      jw                  d+¬,«      |d-œ}t`        jx                  j{                  dd¬.«       t`        j}                  d/«      }|j                  te        j€                  |dd0¬1«      d2z   d%¬&«       te        jf                  |ji                  d%¬&«      «      }tƒ        |j                  d(«      tZ        «      rt%        |d(   «      dk  r|j…                  d¬3«       t'        d4«      ‚|j‡                  t`        «       tk        d5t%        |«      › d6t`        j‰                  tŠ        «      › d7«       y # td        jl                  tn        tp        f$ r Y Œxw xY w)8NzAmerica/Sao_Paulor»   r½   rL   zForam reconhecidos apenas u`    avisos na pÃ¡gina oficial; o JSON existente foi preservado. Revise o seletor antes de publicar.r6   r   rs   r«   ro   r…   )Trq   r:   Trn   rp   r   rr   rq   r(   Úmetazog:image)ÚpropertyÚ contentrª   )Nrq   Ú
-daysRemainingÚstatusÚ	permanentF)r…   r6   r(   rÌ   rË   rÍ   r   g333333Ã?)rq   NzBA coleta resultou em poucos eventos; arquivo existente preservado.r~   r   Úsourcer„   u   Nenhuma mudanÃ§a nos z' eventos; JSON mantido sem novo commit.Ú seconds)Útimespec)rÎ   Ú	updatedAtr„   )Ú parentsÚexist_okz	.json.tmprI   )Úensure_asciiÚindentÚ
-)Ú
-missing_oku;   ValidaÃ§Ã£o final falhou; JSON publicado nÃ£o foi alterado.zEventos SA atualizados: z itens; arquivo r   )FrÁ   Ú SessionÚ headersÚupdateÚ HEADERSr   Únowr    r   r‘   Ú
-SOURCE_URLr¾   r¿   rÀ   r€   r   rC   r¹   rh   r   r—   r›   r7   ÚstrÚ	enumerateÚMAX_DETAIL_PAGESÚpoprE   Úboolr;   r?   r@   rÆ   r=   rt   rl   ru   rv   r°   r
-   r+   ÚminÚtimeÚsleepr“   rg   ÚvaluesÚ
-MAX_EVENTSr™   r‡   r   rŽ   rˆ   rŠ   r   ÚAttributeErrorrš   r   ÚutcÚ	isoformatr¯   ÚmkdirÚ
-with_suffixÚ
-write_textÚdumpsr’   ÚunlinkÚ replaceÚ
-relative_toÚROOT) rÃ   ry   rÅ   Ú listingÚ scrapedÚsnapshot_eventsÚexisting_eventsÚ
-old_by_urlrÄ   r6   Ú
-output_by_urlÚindexÚoldrÍ   rv   rÌ   rx   Ú	card_daysÚcard_permanentÚdetailÚ
-detail_textrz   r{   r(   Ú	candidateÚ
-normalizedr   r„   Ú currentr   Ú	temp_pathÚ checkeds                                    r   Úmainr  Ù   s  € Ü×ÑÓ €GØ
-‡OO×Ñœ7Ô#ÜL‰LœÐ"5Ó6Ó7×<Ñ<Ó>€Eà{‰{œ:¬wˆ{Ó7€HØ×ÑÔØ ×2Ñ2ÒG°h×6GÑ6G€HÔÜ˜HŸM™M¨=Ó9€GÜ˜wÓ'€Gô 
-ˆ7ƒ|aÒ ÜØ(¬¨W«¨ð 7Sð 
-Só
-ð 	
-ô
- $“o€OÜ#“o€OØ€JØ  ?Ô2ˆÜœC §	¡	¨%°Ó 4Ó5Ó6ˆÚ
-Ø#ˆJsŠOð  3ð
- €MÜ! 'Ð*;Ô+;Ð"<×=‰ˆˆuØn‰n˜U 5™\¨2Ó.ˆØ":Ñˆ	4˜ð —I‘I˜l¨BÓ/ˆ	Ü˜yÓ)ˆ	ÜœbŸi™iÐ(9¸9ÄbÇdÁdÓKÓLˆÙ
-œRŸY™YÐ'8¸%À ¹.Ì"Ï$É$ÔOØ 1ÑˆIvØ09Ð0AÉ.”˜G UÔ+Ð_cˆÙ
-Ü$ V§_¡_°SÀ _Ó%EÓFˆKÜy‰yÐ*¨K¼¿¹Ô>Ø*AÑ'	˜4¡ä/°
-Ó<ÙØ"Ÿ-™-›/CÜ˜q 3¨¡;×"4Ñ"4Ó5DØ,/°%ªK™[¸[‘FØÐ*Ø$DØ˜’>ð Ÿ
-™
- F°Z˜
-Ó@Ù˜UŸY™Y yÔ1Ü '¨¨e©°e¸IÑ6FÓ GIÜ%7¸	ÈÔ%NE˜'‘Ná
-Ø&=Ñ#ˆIt™VØ
-ˆ\˜iÐ3Ø$ k&ˆDÙ
-Ø,‰LˆD‘&Ø
-ˆ\Ø—7‘7˜?Ó+ˆDØ—W‘W˜X vÓ.ˆFØw‰w{Ó# uÑ,°·±¸Ó1BÀkÒ1QØ$ð ˜7‘^Ø˜‘<Ø˜7‘^Ò; s§w¡w¨w¸Ó';ØØ!Ø"ÒB c§g¡g¨kÓ&:¸dÐ&Bñ
- 
-ˆ
-ð kÒ
-"Ø#.ˆJxÑ Ø*.ˆJÑ'Ø+5ˆ
-j Ñ'Ñ(ð ”3”s˜7“|Ô%5Ó6¸Ñ:Ô
-:ÜJ‰JtÖðu >ð|  Ô0ˆÜœC § ¡ ¨¨rÓ 2Ó3Ó4ˆÙc˜]Ñ*°#·'±'¸'Ô2BØÜC‹yˆØˆˆU‰
-Ü*¬3¨t¯x©x¸ ÀÓ/DÓ+EÈTÔRˆˆW‰
-Ø
-8‰8KÓ
-  DÑ
-(Ø4EÑ1ˆD‰N˜D Ñ1Ø!ˆ
-cÒð 1ô -×&Ñ&Ó(Ó
-)¨+¬:Ð
-6€FÜ 
-ˆ6ƒ{Q‚ÜÐ_Ó`Ð`ô × Ñ Ô ð	Ü—j‘j¤×!4Ñ!4¸gÐ!4Ó!FÓGˆGØ{‰{˜8Ó$¬
-Ò2°w·{±{À8Ó7LÐPVÒ7VÜÐ-¬c°&«k¨]Ð:aÐbÔcØô
- Ü—\‘\¤(§,¡,Ó/×9Ñ9À9Ð9ÓMØñ €Dô
- ×Ñ×Ñ 4°$ÐÔ7Ü×%Ñ% kÓ2€IØ
-×ÑœŸ™ D°uÀQÔGÈ$ÑNÐY`ÐÔaäj‰j˜×,Ñ,°gÐ,Ó>Ó?€GÜ
-g—k‘k (Ó+¬TÔ
-2´c¸'À(Ñ:KÓ6LÈqÒ6PØ×Ñ DÐÔ)ÜÐXÓYÐYØ
-×Ñ”iÔ Ü	Ð$¤S¨£[ MÐ1AÄ)×BWÑBWÔX\ÓB]ÐA^Ð^_Ð
-`Õaøô# ×$Ñ$¤n´gÐ>ò 	Úð	ús   Ò<A-Z ÚZ#Ú"Z#Ú__main__zERRO: r‚   )F)r'   rÞ   r(   râ   ÚreturnrÞ   )r'   rÞ   r  rÞ   )rC   rÞ   )rw   r   rx   rÞ   ry   r   )rw   r   )rÃ   zrequests.SessionrÄ   r“   )7Ú __doc__Ú
-__future__r   r   r;   r‹   rä   r   r   r   Úzoneinfor    Ú
-email.utilsr   Ú pathlibr	   Úurllib.parser
-   r
-   r   r
-   r   rÁ   Úbs4r   Ú__file__Ú resolverÒ   rò   r†   r™   rÝ   r&   rÛ   r¾   rà   rç   r+   r7   r=   rE   rb   rl   r|   r—   r›   r¹   rÆ   r  Ú__name__Ú	Exceptionr•   rŠ   rŒ   ÚexitrN   r8   r   Ú<module>r     s&  ðñõ
- #ã 
-Û 	Û 
-Û 
-ß -Ñ -Ý Ý -Ý ß KÕ Kã Ý á 
-ˆHƒ~× Ñ Ó × 'Ñ '¨Ñ *€Ø<Ñ€	Ø6‰MÐ-Ñ-€	Ø
-O€
-Ø+€
-àpØ0ñ
-€ ð 
-
-€ ØÐ Ø
-€
-ô
-$ó
-ió4ó2ó
-'ó.	2ó$ò$Zò(mó/ódò@bðF ˆzÒðÙð øð ò Ù
-seˆn 3§:¡:Õ.Øˆ‰
-‰
-ûðús   Ã  C	 Ã	DÃ)C<Ã<D
