@@ -28,6 +28,11 @@ class EventosSATests(unittest.TestCase):
         self.assertTrue(collector.card_marks_permanent("Evento Permanente"))
         self.assertFalse(collector.card_marks_permanent("Evento termina em 9 dias restantes"))
 
+    def test_clean_event_title_removes_ui_badges_and_countdown(self):
+        self.assertEqual(collector.clean_event_title("POPULAR Passe Especial Diário com o Demônio 10 dias restantes"), "Passe Especial Diário com o Demônio")
+        self.assertEqual(collector.clean_event_title("NOVO Evento de Teste"), "Evento de Teste")
+        self.assertEqual(collector.clean_event_title("[Arena Solare] Vitória Ranqueada Semanal!"), "[Arena Solare] Vitória Ranqueada Semanal!")
+
     def test_date_parser_iso_and_brazilian(self):
         iso = collector.parse_date_tokens("Período: 2026-10-22 03:00 ~ 2026-11-05 02:59")
         self.assertGreaterEqual(len(iso), 2)
