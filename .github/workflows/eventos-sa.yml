@@ -1,0 +1,74 @@
+name: Atualizar eventos SA
+
+on:
+  schedule:
+    - cron: "0 8 * * 4"
+      timezone: "America/Sao_Paulo"
+    - cron: "0 10 * * 4"
+      timezone: "America/Sao_Paulo"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eventos-sa
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: python -m pip install --upgrade pip requests beautifulsoup4
+
+      - name: Validar coletor
+        run: python -m py_compile scripts/atualizar_eventos_sa.py
+
+      - name: Coletar eventos oficiais do SA
+        run: python scripts/atualizar_eventos_sa.py
+
+      - name: Validar JSON gerado
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/eventos-sa.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          assert isinstance(data.get("events"), list), "events precisa ser uma lista"
+          assert len(data["events"]) >= 5, "A coleta retornou poucos eventos"
+          required = {"title", "url", "image", "status", "daysRemaining", "permanent"}
+          seen = set()
+          for index, event in enumerate(data["events"]):
+              missing = required - event.keys()
+              assert not missing, f"Evento {index} sem campos: {sorted(missing)}"
+              assert event["title"].strip(), f"Título vazio no evento {index}"
+              assert event["url"].startswith("https://www.sa.playblackdesert.com/"), f"URL não oficial: {event['url']}"
+              assert event["url"] not in seen, f"Evento duplicado: {event['url']}"
+              seen.add(event["url"])
+              assert event["status"] in {"andamento", "encerrado"}, f"Status inválido: {event['status']}"
+              assert isinstance(event["permanent"], bool), f"permanent inválido no evento {index}"
+          print(f"JSON validado: {len(data['events'])} eventos.")
+          PY
+
+      - name: Publicar JSON no branch do site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/eventos-sa.json
+          if git diff --cached --quiet; then
+            echo "O JSON não mudou; nenhum commit necessário."
+            exit 0
+          fi
+          git commit -m "chore: atualizar eventos SA"
+          git push
