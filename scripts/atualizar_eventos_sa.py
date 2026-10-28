@@ -64,6 +64,16 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def clean_event_title(value: str) -> str:
+    """Remove selos/contadores da interface sem alterar o título do aviso."""
+    title = clean_text(value)
+    # Esses textos são rótulos do cartão, não parte do título oficial.
+    title = re.sub(r"\b(?:POPULAR|NOVO)\b", " ", title, flags=re.I)
+    title = re.sub(r"\b\d+\s*dias?\s+restantes?\b", " ", title, flags=re.I)
+    title = re.sub(r"\s+", " ", title).strip(" -|•·")
+    return title
+
+
 def parse_days(text: str):
     match = re.search(r"(\d+)\s*dias?\s+restantes?", text, re.I)
     return int(match.group(1)) if match else None
@@ -167,7 +177,7 @@ def find_event_cards(soup: BeautifulSoup):
         if "groupContentNo=" not in raw_href or "Detail" not in raw_href:
             continue
         url = normalize_url(raw_href)
-        title = clean_text(anchor.get("title") or anchor.get_text(" ", strip=True))
+        title = clean_event_title(anchor.get("title") or anchor.get_text(" ", strip=True))
         if not url or not title or len(title) < 3:
             continue
         if title.lower() in {"saiba mais", "ver mais", "mais"}:
@@ -187,7 +197,7 @@ def find_event_cards(soup: BeautifulSoup):
         if not title:
             heading = best.find(["h2", "h3", "h4", "strong"])
             if heading:
-                title = clean_text(heading.get_text(" ", strip=True))
+                title = clean_event_title(heading.get_text(" ", strip=True))
         if not title or title.lower() in {"saiba mais", "ver mais", "mais"}:
             continue
         if url in seen:
@@ -255,7 +265,7 @@ def main():
         card_text = event.pop("_card_text", "")
         card_days = parse_days(card_text)
         card_permanent = card_marks_permanent(card_text)
-        if card_permanent or re.search(r"\bpermanente\b", event["title"], re.I):
+        if card_permanent:
             permanent, status = True, "andamento"
         detail = get_detail(session, event) if (card_days is None and not card_permanent) else None
         if detail:
@@ -296,7 +306,9 @@ def main():
             "image": event["image"] or old.get("image", ""),
             "status": status,
             "daysRemaining": days,
-            "permanent": permanent or old.get("permanent") is True,
+            # A classificação atual do cartão/detalhe prevalece sobre dados antigos.
+            # Não manter permanent=True para sempre se o evento passar a ter prazo.
+            "permanent": permanent,
         }
         if normalized["permanent"]:
             normalized["status"] = "andamento"
