@@ -1,51 +1,67 @@
 {
   "source": "https://www.sa.playblackdesert.com/pt-BR/News/Notice?boardType=3",
-  "updatedAt": "2026-10-28T03:07:35+00:00",
+  "updatedAt": "2026-10-29T17:08:44+00:00",
   "events": [
     {
-      "title": "[Semana de Agradecimento] Dia de Black Desert: Compartilhe sua Mensagem de Celebração para o SA!",
+      "title": "Recompensas de Acesso Diário de Novembro",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8788&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 0,
+      "permanent": false
+    },
+    {
+      "title": "Caça ao Laurau com Hot Time!",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8787&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 0,
+      "permanent": false
+    },
+    {
+      "title": "A Loja Especial de Derus está Aberta!",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8782&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 0,
+      "permanent": false
+    },
+    {
+      "title": "Todos os Eventos da Semana de Agradecimento SA 2026 12",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8762&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 7,
+      "permanent": false
+    },
+    {
+      "title": "Disponível o Ano Todo! Benefícios Especiais de Evento Permanente 8",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6489&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Semana de Agradecimento] Dia de Black Desert: Compartilhe sua Mensagem de Celebração para o SA! 10",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8760&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/21/mtatqdysrd4q5w5820261021231810795.400x225.jpg",
-      "status": "encerrado",
-      "daysRemaining": 0,
-      "permanent": false
-    },
-    {
-      "title": "Todos os Eventos da Semana de Agradecimento SA 2026",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8762&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/21/mtatqdysrd4q5w5820261021231810795.400x225.jpg",
-      "status": "encerrado",
-      "daysRemaining": 0,
-      "permanent": false
-    },
-    {
-      "title": "[EP. 3] O Chefe Mundial veio para brincar",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8750&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/21/mtatqdysrd4q5w5820261021231810795.400x225.jpg",
-      "status": "encerrado",
-      "daysRemaining": 0,
-      "permanent": false
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
     },
     {
       "title": "[Semana de Agradecimento] Sorteio Especial Gleam para você! 17",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8759&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/21/5d6my49edplpolg120261021231536783.400x225.jpg",
       "status": "andamento",
-      "daysRemaining": 9,
-      "permanent": false
+      "daysRemaining": null,
+      "permanent": true
     },
     {
-      "title": "[Semana de Agradecimento] Evento de Vídeo de Celebração! 10",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8755&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/21/kfqqviqygmquoo6w20261021213139244.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": 2,
-      "permanent": false
-    },
-    {
-      "title": "Disponível o Ano Todo! Benefícios Especiais de Evento Permanente 8",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6489&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "title": "[EP. 3] O Chefe Mundial veio para brincar 12",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8750&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/20/6k078g7qyssjt3dh20261020191224075.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -115,14 +131,6 @@
       "permanent": true
     },
     {
-      "title": "[Presente de Dong-Hwa] Recompensas de Acesso Especial 11",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8666&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/09/29/vjipmmiux9fc3zkx20260929203930179.400x225.png",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
       "title": "Recompensas Diárias de Login de Outubro 10",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8641&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/09/22/tsik9tbau1rkb4t620260922210756007.400x225.jpg",
@@ -157,7 +165,7 @@
     {
       "title": "Evolua um Personagem de Temporada com o Passe de Temporada de Crescimento Acelerado Permanente 11",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=7237&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -165,7 +173,7 @@
     {
       "title": "Aprimore a Arma Principal Soberana! (Última atualização: 27/11/2025 06:00 UTC-3) Permanente 13",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6463&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -173,7 +181,7 @@
     {
       "title": "10 Bilhões de Moedas de Prata para Novos Aventureiros! Permanente 10",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6421&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -181,15 +189,31 @@
     {
       "title": "O roubo de Selos dos 10 anos da Deadeye! Permanente 9",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5667&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
     },
     {
-      "title": "Comece a Aventura dos Seus Sonhos! Permanente 15",
+      "title": "[Semana de Agradecimento] Evento de Vídeo de Celebração!",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8755&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/21/kfqqviqygmquoo6w20261021213139244.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 3,
+      "permanent": false
+    },
+    {
+      "title": "[Presente de Dong-Hwa] Recompensas de Acesso Especial",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8666&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/09/29/vjipmmiux9fc3zkx20260929203930179.400x225.png",
+      "status": "andamento",
+      "daysRemaining": 2,
+      "permanent": false
+    },
+    {
+      "title": "Comece a Aventura dos Seus Sonhos!",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5644&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "image": "https://s1.pearlcdn.com/SA/Upload/thumbnail/2024/U8QLKCJ6R3HHWSAB20241223190800926.400x225.png",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
