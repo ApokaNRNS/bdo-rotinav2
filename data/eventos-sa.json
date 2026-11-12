@@ -1,11 +1,19 @@
 {
   "source": "https://www.sa.playblackdesert.com/pt-BR/News/Notice?boardType=3",
-  "updatedAt": "2026-11-05T18:22:12+00:00",
+  "updatedAt": "2026-11-12T18:38:28+00:00",
   "events": [
+    {
+      "title": "Novos Itens da Loja de Pérolas - 12/11 (qui.)",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8848&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/10/w2uf8cqww62kodar20261110204440637.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 0,
+      "permanent": false
+    },
     {
       "title": "[Passe Especial de Combate] Mais Recompensas!",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8826&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/04/h8c8yti26r774pm520261104233606383.400x225.jpg",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/10/w2uf8cqww62kodar20261110204440637.400x225.jpg",
       "status": "andamento",
       "daysRemaining": 0,
       "permanent": false
@@ -13,55 +21,87 @@
     {
       "title": "[Mês do Shakatu #1] Presentes Especiais!",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8827&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/04/h8c8yti26r774pm520261104233606383.400x225.jpg",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/10/w2uf8cqww62kodar20261110204440637.400x225.jpg",
       "status": "andamento",
       "daysRemaining": 0,
       "permanent": false
     },
     {
-      "title": "Recompensas de Acesso Diário de Novembro",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8788&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/04/h8c8yti26r774pm520261104233606383.400x225.jpg",
+      "title": "Bênção de Pérolas para a Black Friday! 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8866&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
-      "daysRemaining": 0,
+      "daysRemaining": 22,
+      "permanent": false
+    },
+    {
+      "title": "Passe Especial da Solare 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8855&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/7ccyx3jlib7nz77220261111233434825.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 22,
+      "permanent": false
+    },
+    {
+      "title": "[Arena Solare] Lute pela vitória! 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8854&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/3hxgk5xj08x5ol3i20261111231702552.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 22,
+      "permanent": false
+    },
+    {
+      "title": "[Mês de Shakatu] Decifre o código! 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8853&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/rau2i4fe560s3woo20261111224305976.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 15,
+      "permanent": false
+    },
+    {
+      "title": "[Mês de Shakatu] Escolha um princípio! 3",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8852&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/2h8b2jz517bnzczk20261111223814348.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 8,
+      "permanent": false
+    },
+    {
+      "title": "[Mês de Shakatu] Baú Deslumbrante de Shakatu 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8851&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/3suuuzxbov75o9dm20261111223021958.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 15,
+      "permanent": false
+    },
+    {
+      "title": "[Black Friday] Ofertas de Pacotes e Kits 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8849&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/10/h2d322wvx60zufmy20261110204108417.400x225.png",
+      "status": "andamento",
+      "daysRemaining": 15,
       "permanent": false
     },
     {
       "title": "Disponível o Ano Todo! Benefícios Especiais de Evento Permanente 8",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6489&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
     },
     {
-      "title": "Caça ao Laurau com Hot Time! 11",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8787&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/t1epughmqcz7ku1q20261027200440594.400x225.jpg",
+      "title": "O Estúdio de Fotografia de Família Está Aberto! 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8837&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/06/uthoweukw8gj1n0f20261106163314633.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
     },
     {
-      "title": "A Loja Especial de Derus está Aberta! 13",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8782&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/wshz7qgfaxqsgear20261027185648087.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "Celebre o Master Class 2026 com Twitch Drops 12",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8690&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/06/zwle8i2h3q8bfg4u20261006180123166.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "Impulso de Combate da Academia de Olvia 10",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8498&countryType=pt-BR",
-      "image": "https://s1.pearlcdn.com/SA/Upload/thumbnail/2026/V7KGQ09G7RYMVKOG20260826215737451.400x225.jpg",
+      "title": "Recompensas de Acesso Diário de Novembro 10",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8788&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/2kg90xfge9nzyucp20261027201720138.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -77,7 +117,7 @@
     {
       "title": "Evolua um Personagem de Temporada com o Passe de Temporada de Crescimento Acelerado Permanente 11",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=7237&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -85,7 +125,7 @@
     {
       "title": "Aprimore a Arma Principal Soberana! (Última atualização: 27/11/2025 06:00 UTC-3) Permanente 13",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6463&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -93,7 +133,7 @@
     {
       "title": "10 Bilhões de Moedas de Prata para Novos Aventureiros! Permanente 10",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6421&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -101,7 +141,7 @@
     {
       "title": "O roubo de Selos dos 10 anos da Deadeye! Permanente 9",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5667&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -109,7 +149,7 @@
     {
       "title": "Comece a Aventura dos Seus Sonhos! Permanente 15",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5644&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -117,7 +157,7 @@
     {
       "title": "Mais um Cupom de Temporada! Permanente 9",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5637&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -125,7 +165,7 @@
     {
       "title": "Experimente os Twitch Drops reformulados todos os dias! (Última atualização: 23/1/2026 20:00 UTC-3) Permanente 6",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=4759&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -133,7 +173,7 @@
     {
       "title": "Cupom de Temporada? Mais um! Permanente 5",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=4840&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -141,15 +181,15 @@
     {
       "title": "Mais um Cupom de Personagem de Temporada! Permanente 6",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=4600&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
     },
     {
-      "title": "visual nos Drops da Twitch! (Última Atualização: 31/10/2025 14:50 (UTC-3)) Permanente 2",
+      "title": "visual nos Drops da Twitch! (Última Atualização: 31/10/2025 14:50 (UTC-3)) Permanente 3",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=3504&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -157,39 +197,7 @@
     {
       "title": "[PEN (V) Blackstar] PEN (V) + TET (IV) Arma Blackstar Permanente 7",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=3989&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "[Corcel Lendário] Um Sonho Realizado! ★ Permanente 5",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=3988&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "Passe de temporada e graduação simplificados! Permanente 2",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=3583&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "Muito mais Conveniência com o Black Desert+! Permanente 2",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=1152&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "Benefícios Imperdíveis para Aventureiros Novos e Regressados Permanente 0",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=1188&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/tg20uk2z7uak8wex20261111234830806.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -307,11 +315,27 @@
       "permanent": false
     },
     {
+      "title": "Impulso de Combate da Academia de Olvia",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8498&countryType=pt-BR",
+      "image": "https://s1.pearlcdn.com/SA/Upload/thumbnail/2026/V7KGQ09G7RYMVKOG20260826215737451.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 17,
+      "permanent": false
+    },
+    {
       "title": "Presentes de Boas-vindas para Novatos/Retornando",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8304&countryType=pt-BR",
       "image": "https://s1.pearlcdn.com/SA/Upload/thumbnail/2026/URVX4J5YZ9A25TBH20260722204138821.400x225.jpg",
       "status": "andamento",
       "daysRemaining": 9,
+      "permanent": false
+    },
+    {
+      "title": "Celebre o Master Class 2026 com Twitch Drops",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8690&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/06/zwle8i2h3q8bfg4u20261006180123166.400x225.jpg",
+      "status": "encerrado",
+      "daysRemaining": null,
       "permanent": false
     },
     {
@@ -497,6 +521,54 @@
       "status": "encerrado",
       "daysRemaining": null,
       "permanent": false
+    },
+    {
+      "title": "Caça ao Laurau com Hot Time! 11",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8787&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/t1epughmqcz7ku1q20261027200440594.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "A Loja Especial de Derus está Aberta! 13",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8782&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/27/wshz7qgfaxqsgear20261027185648087.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Corcel Lendário] Um Sonho Realizado! ★ Permanente 5",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=3988&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "Passe de temporada e graduação simplificados! Permanente 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=3583&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "Muito mais Conveniência com o Black Desert+! Permanente 2",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=1152&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "Benefícios Imperdíveis para Aventureiros Novos e Regressados Permanente 0",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=1188&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/05/2i0khk88wcoqzdjs20261105000035077.400x225.png",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
     }
   ]
 }
