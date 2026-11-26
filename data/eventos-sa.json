@@ -1,75 +1,99 @@
 {
   "source": "https://www.sa.playblackdesert.com/pt-BR/News/Notice?boardType=3",
-  "updatedAt": "2026-11-19T19:13:17+00:00",
+  "updatedAt": "2026-11-26T19:54:23+00:00",
   "events": [
     {
-      "title": "[Mês de Shakatu] 1 Chefe. 3 Pacotes.",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8889&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/18/ogox9fdrogxp5c6q20261118233650898.400x225.jpg",
+      "title": "[Mês de Shakatu] Desafio do Presente de Derus",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8933&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/prduie0y19zjnsci20261125220553899.400x225.jpg",
       "status": "andamento",
       "daysRemaining": 0,
       "permanent": false
     },
     {
-      "title": "[Mês de Shakatu] Recompensas pelo Esforço!",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8894&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/18/ogox9fdrogxp5c6q20261118233650898.400x225.jpg",
+      "title": "Registro Semanal da Guerra de Base",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8934&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/prduie0y19zjnsci20261125220553899.400x225.jpg",
       "status": "andamento",
       "daysRemaining": 0,
       "permanent": false
     },
     {
-      "title": "[Mês de Shakatu] Aumento da Febre de Agris",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8890&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/18/ogox9fdrogxp5c6q20261118233650898.400x225.jpg",
+      "title": "[Mês de Shakatu] A Loja de Derus está de volta!",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8932&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/prduie0y19zjnsci20261125220553899.400x225.jpg",
       "status": "andamento",
       "daysRemaining": 0,
       "permanent": false
+    },
+    {
+      "title": "Recompensas de Login de Dezembro 1",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8935&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 36,
+      "permanent": false
+    },
+    {
+      "title": "Todos os Eventos da Semana de Agradecimento SA 2026 (Última Atualização: 20/11/2026 17:10 (UTC-3)) 12",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8762&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 11,
+      "permanent": false
+    },
+    {
+      "title": "Disponível o Ano Todo! Benefícios Especiais de Evento Permanente 9",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6489&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
     },
     {
       "title": "Crie Seu Título Único! 8",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8903&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
       "status": "andamento",
-      "daysRemaining": 15,
-      "permanent": false
+      "daysRemaining": null,
+      "permanent": true
     },
     {
-      "title": "[Mês de Shakatu] Salve o Banquete! 9",
+      "title": "[Mês de Shakatu] Salve o Banquete! 10",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8902&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/sh8ddukp9rbll5i520261119000716528.400x225.jpg",
       "status": "andamento",
-      "daysRemaining": 15,
-      "permanent": false
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Mês de Shakatu] Recompensas pelo Esforço! 8",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8894&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/ker94wf6a5ktd39820261119000004364.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Mês de Shakatu] Aumento da Febre de Agris 8",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8890&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/18/qnus6n5mczxktdjn20261118234730990.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Mês de Shakatu] 1 Chefe. 3 Pacotes. 9",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8889&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/18/ogox9fdrogxp5c6q20261118233650898.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
     },
     {
       "title": "[Novatos/Retornando] Presentes de Boas-vindas! 8",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8888&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/18/80ou9w5aaipbr7mu20261118232559913.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": 28,
-      "permanent": false
-    },
-    {
-      "title": "[Mês de Shakatu] Escolha um princípio! 8",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8852&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/2h8b2jz517bnzczk20261111223814348.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": 8,
-      "permanent": false
-    },
-    {
-      "title": "Todos os Eventos da Semana de Agradecimento SA 2026 (Última Atualização: 13/11/2026 16:10 (UTC-3)) 12",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8762&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/10/22/3sg8c87jommmv5f620261022001402010.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": 18,
-      "permanent": false
-    },
-    {
-      "title": "Disponível o Ano Todo! Benefícios Especiais de Evento Permanente 8",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6489&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -94,30 +118,6 @@
       "title": "[Arena Solare] Lute pela vitória! 8",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8854&countryType=pt-BR",
       "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/3hxgk5xj08x5ol3i20261111231702552.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "[Mês de Shakatu] Decifre o código! 11",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8853&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/rau2i4fe560s3woo20261111224305976.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "[Mês de Shakatu] Baú Deslumbrante de Shakatu 8",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8851&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/3suuuzxbov75o9dm20261111223021958.400x225.jpg",
-      "status": "andamento",
-      "daysRemaining": null,
-      "permanent": true
-    },
-    {
-      "title": "[Black Friday] Ofertas de Pacotes e Kits 8",
-      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8849&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/10/h2d322wvx60zufmy20261110204108417.400x225.png",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -157,7 +157,7 @@
     {
       "title": "Evolua um Personagem de Temporada com o Passe de Temporada de Crescimento Acelerado Permanente 11",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=7237&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -165,7 +165,7 @@
     {
       "title": "Aprimore a Arma Principal Soberana! (Última atualização: 27/11/2025 06:00 UTC-3) Permanente 13",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6463&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -173,7 +173,7 @@
     {
       "title": "10 Bilhões de Moedas de Prata para Novos Aventureiros! Permanente 10",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=6421&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -181,7 +181,7 @@
     {
       "title": "O roubo de Selos dos 10 anos da Deadeye! Permanente 9",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5667&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -189,7 +189,7 @@
     {
       "title": "Comece a Aventura dos Seus Sonhos! Permanente 15",
       "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=5644&countryType=pt-BR",
-      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/19/uu6uzeasesd6y23m20261119001431953.400x225.png",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/25/pnhugwyujyugt00320261125223538890.400x225.jpg",
       "status": "andamento",
       "daysRemaining": null,
       "permanent": true
@@ -513,6 +513,38 @@
       "status": "encerrado",
       "daysRemaining": null,
       "permanent": false
+    },
+    {
+      "title": "[Mês de Shakatu] Escolha um princípio! 8",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8852&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/2h8b2jz517bnzczk20261111223814348.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": 8,
+      "permanent": false
+    },
+    {
+      "title": "[Mês de Shakatu] Decifre o código! 11",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8853&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/rau2i4fe560s3woo20261111224305976.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Mês de Shakatu] Baú Deslumbrante de Shakatu 8",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8851&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/11/3suuuzxbov75o9dm20261111223021958.400x225.jpg",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
+    },
+    {
+      "title": "[Black Friday] Ofertas de Pacotes e Kits 8",
+      "url": "https://www.sa.playblackdesert.com/News/Notice/Detail?groupContentNo=8849&countryType=pt-BR",
+      "image": "https://static.pearlcdn.com/files/portal/bdo_sa/thumbnail/2026/11/10/h2d322wvx60zufmy20261110204108417.400x225.png",
+      "status": "andamento",
+      "daysRemaining": null,
+      "permanent": true
     },
     {
       "title": "Novos Itens da Loja de Pérolas - 12/11 (qui.)",
